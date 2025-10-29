@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 from langchain_community.chat_models import ChatOllama
 from langchain.agents import initialize_agent, Tool, AgentType
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 from langchain.tools import tool
 
 # ----------------------------TOOLS------------------------------------
@@ -32,7 +32,7 @@ def web_search(query: str) -> str:
 
 # ----------------------------AGENT------------------------------------
 
-llm = ChatOllama(model="llama3", temperature=0)
+llm = ChatOllama(model="gemma3", temperature=0)
 tools = [web_search]
 agent = initialize_agent(
     tools,
