@@ -6,7 +6,7 @@ dependencies:
   - pip
   - pip:
       - ollama-python==0.1.2
-      - duckduckgo-search==8.1.1
+      - ddgs==9.6.1
       - langchain-openai==0.3.27
       - langchain-community==0.3.27
       - openai==1.86.0
