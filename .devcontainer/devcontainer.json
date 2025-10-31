@@ -5,7 +5,8 @@
 
   "features": {
     "ghcr.io/devcontainers/features/common-utils:latest": {},
-    "ghcr.io/devcontainers/features/node:latest": {}
+    "ghcr.io/devcontainers/features/node:latest": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:latest": {}
   },
 
   "overrideFeatureInstallOrder": [
@@ -21,5 +22,7 @@
     }
   },
 
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+
+  "onCreateCommand": "./.devcontainer/on-create.sh > ~/on-create.log"
 }
